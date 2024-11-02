@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category Detail - MealApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">mealapp</div>
+        <ul class="navbar-links">
+            <li><a href="index.html" data-section="home">Home</a></li>
+            <li><a href="foods.html" data-section="foods">Foods</a></li>
+            <li><a href="ingredients.html" data-section="ingredients">Ingredients</a></li>
+            <li><a href="local_culinary.html" data-section="localCulinary">Local Culinary</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="category-detail-title">
+            <div class="breadcrumb">
+                <a href="index.html" data-section="home">Home</a> > 
+                <a href="foods.html" data-section="foods">Foods</a> > 
+                <a href="category_detail.html" id="breadcrumb-category" data-section="category">Category</a> > 
+                <span id="breadcrumb-meal">Meal</span>
+            </div>
+            <h2 id="category-title">Category Meals</h2>
+        </section>
+
+        <section class="product-grid" id="meal-container">
+        </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

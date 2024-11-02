@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Detail - MealApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">mealapp</div>
+        <ul class="navbar-links">
+            <li><a href="index.html" data-section="home">Home</a></li>
+            <li><a href="foods.html" data-section="foods">Foods</a></li>
+            <li><a href="ingredients.html" data-section="ingredients">Ingredients</a></li>
+            <li><a href="local_culinary.html" data-section="localCulinary">Local Culinary</a></li>
+        </ul>
+    </nav>
+    <section class="category-detail-title">
+        <div class="breadcrumb">
+            <a href="index.html" data-section="home">Home</a> > 
+            <a href="foods.html" data-section="foods">Foods</a> > 
+            <a href="category_detail.html" id="breadcrumb-category" data-section="category">Category</a> >
+            <span id="breadcrumb-meal">Meal</span>
+        </div>
+        <h2 id="meal-title">Meal Title</h2>
+        <p id="meal-culinary" class="culinary-origin">Culinary Origin</p>
+    </section>
+    <div class="content-container">
+        <section class="meal-detail">
+            <div class="meal-content">
+                <img id="meal-image" src="" alt="Meal Image" class="meal-image">
+                <div class="meal-instructions">
+                    <h2>Instructions</h2>
+                    <p id="meal-instructions-text">Instructions will be displayed here.</p>
+                    <h2>Recipes</h2>
+                    <ul id="meal-recipe-list"></ul>
+                </div>
+            </div>
+            <div class="meal-tutorial">
+                <h2>Tutorials</h2>
+                <iframe id="meal-video" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
